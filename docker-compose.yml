@@ -1,0 +1,59 @@
+services:
+  cassandra:
+    image: bitnami/cassandra:5.0.0
+    container_name: cassandra
+    hostname: cassandra
+    env_file:
+      - .env
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./cassandra:/bitnami/cassandra
+    networks:
+      - data_pipeline
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    hostname: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/csv:/var/lib/mysql-files
+    networks:
+      - data_pipeline
+
+  spark-master:
+    image: bitnami/spark:3.5.2
+    container_name: spark-master
+    hostname: spark-master
+    command: bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "9090:8080"
+      - "7077:7077"
+    networks:
+      - data_pipeline
+
+  spark-worker:
+    image: bitnami/spark:3.5.2
+    container_name: spark-worker
+    command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    depends_on:
+      - spark-master
+    environment:
+      SPARK_MODE: worker
+      SPARK_WORKER_CORES: 2
+      SPARK_WORKER_MEMORY: 1g
+      SPARK_MASTER_URL: spark://spark-master:7077
+    networks:
+      - data_pipeline
+
+networks:
+  data_pipeline:
+

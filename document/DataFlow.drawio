@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2023-11-26T13:00:51.862Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="dXqNpDjMBDzoMM31cTjo" version="22.1.4" type="device">
+  <diagram name="Page-1" id="D7ow1z_tx69pgX-HmzAA">
+    <mxGraphModel dx="1173" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfgOVBOIsYNDgDbHEHc9-1" target="sfgOVBOIsYNDgDbHEHc9-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfgOVBOIsYNDgDbHEHc9-3" target="sfgOVBOIsYNDgDbHEHc9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-3" value="Applications" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="370" y="150" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfgOVBOIsYNDgDbHEHc9-5" target="sfgOVBOIsYNDgDbHEHc9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-5" value="Data Lake" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="380" y="310" width="60" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfgOVBOIsYNDgDbHEHc9-7" target="sfgOVBOIsYNDgDbHEHc9-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfgOVBOIsYNDgDbHEHc9-7" target="sfgOVBOIsYNDgDbHEHc9-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-7" value="Data Warehouse" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="380" y="510" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-9" value="Data Mart" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="270" y="710" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-11" value="Visualize" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="470" y="710" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-13" value="CassandraDB" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-14" value="MySQL" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-15" value="MySQL" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="750" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-16" value="Grafana" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="735" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sfgOVBOIsYNDgDbHEHc9-17" value="requirements : Near realtime , 30s có số lên visualize" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="520" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
